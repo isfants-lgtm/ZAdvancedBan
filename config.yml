@@ -1,0 +1,23 @@
+prefix: '&8[&cAdvancedPunish&8] '
+
+ban-message:
+  - '&c&lACESSO NEGADO'
+  - ''
+  - '&7Você foi banido do servidor.'
+  - '&7Motivo: &f{reason}'
+  - '&7Staff: &f{staff}'
+  - '&7Duração: &f{duration}'
+  - '&7ID: &f#{id}'
+  - ''
+  - '&7Servidor: &f{server}'
+
+messages:
+  no-permission: '&cVocê não tem permissão.'
+  usage: '&cUso incorreto do comando.'
+  punished: '&aPunição aplicada a &f{player}&a. Motivo: &f{reason}'
+  unbanned: '&aBanimento removido de &f{player}&a.'
+  unmuted: '&aMute removido de &f{player}&a.'
+  muted: '&cVocê está mutado. Motivo: &f{reason}'
+  mute-expired: '&aSeu mute expirou.'
+  player-not-found: '&cJogador não encontrado.'
+  no-active-punishment: '&cEsse jogador não possui punição ativa.'

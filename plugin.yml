@@ -1,0 +1,62 @@
+name: AdvancedPunish
+version: 1.0.0
+main: com.seuprojeto.advancedpunish.AdvancedPunish
+api-version: '1.21'
+author: Fantazeed
+description: Sistema de punições para Paper
+
+commands:
+  ban:
+    description: Banimento permanente
+    usage: /ban <jogador> <motivo>
+    permission: advancedpunish.ban
+  tempban:
+    description: Banimento temporário
+    usage: /tempban <jogador> <tempo> <motivo>
+    permission: advancedpunish.tempban
+  unban:
+    description: Remove um banimento
+    usage: /unban <jogador>
+    permission: advancedpunish.unban
+  mute:
+    description: Silenciamento permanente
+    usage: /mute <jogador> <motivo>
+    permission: advancedpunish.mute
+  tempmute:
+    description: Silenciamento temporário
+    usage: /tempmute <jogador> <tempo> <motivo>
+    permission: advancedpunish.tempmute
+  unmute:
+    description: Remove um mute
+    usage: /unmute <jogador>
+    permission: advancedpunish.unmute
+  punishreload:
+    description: Recarrega config
+    usage: /punishreload
+    permission: advancedpunish.reload
+
+permissions:
+  advancedpunish.admin:
+    default: op
+    children:
+      advancedpunish.ban: true
+      advancedpunish.tempban: true
+      advancedpunish.unban: true
+      advancedpunish.mute: true
+      advancedpunish.tempmute: true
+      advancedpunish.unmute: true
+      advancedpunish.reload: true
+  advancedpunish.ban:
+    default: op
+  advancedpunish.tempban:
+    default: op
+  advancedpunish.unban:
+    default: op
+  advancedpunish.mute:
+    default: op
+  advancedpunish.tempmute:
+    default: op
+  advancedpunish.unmute:
+    default: op
+  advancedpunish.reload:
+    default: op
